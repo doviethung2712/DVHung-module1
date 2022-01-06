@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau3</title>
+</head>
+<body>
+
+<script>
+
+    function isFibonacci(n) {
+        let bl = false;
+        let so1 = Math.sqrt((5 * n * n) + 4);
+        let so2 = Math.sqrt((5 * n * n) - 4);
+
+        while (so1 > 0 && so1 % 1 === 0 || so2 > 0 && so2 % 1 === 0) {
+            bl = true;
+            break
+        };
+        if (bl === true){
+            return true
+        } else {
+            return  false
+        }
+    }
+    document.write(isFibonacci(8))
+
+</script>
+
+
+</body>
+</html>
